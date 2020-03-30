@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 import midImage from '../images/mid.png'
 import soloImage from '../images/solo.png'
@@ -58,12 +59,16 @@ const RolesPage = () => {
   }
   return (
     <>
-      <header>
-        <h1>Smite Pick</h1>
+      <header className="role-picker-header">
+        <Link to="/">
+          <h1>Smite Pick</h1>
+        </Link>
         <p>Role Picker</p>
       </header>
-      <main>
-        <section>
+      <main className="roles-main">
+        <h1>Conquest</h1>
+        <button onClick={randomizeRoles}>Randomize Roles</button>
+        <section className="conquest-picker-container">
           <section>
             <input type="text" placeholder="Player 1"></input>
             <img src={player1.image}></img>
@@ -90,7 +95,6 @@ const RolesPage = () => {
             <p>{player5.role}</p>
           </section>
         </section>
-        <button onClick={randomizeRoles}>Randomize Roles</button>
       </main>
     </>
   )
