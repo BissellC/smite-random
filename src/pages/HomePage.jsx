@@ -8,12 +8,12 @@ const HomePage = () => {
       <header>
         <h1>Smite Pick</h1>
       </header>
-      <main>
+      <main className="homepage-main">
         <Link to="/roles">
           <section>
             <p className="section-header">Role Picker</p>
-            <img src={fill}></img>
-            <p>Random roles for you and your teammates in conquest</p>
+            <img className="homepage-image" src={fill}></img>
+            <p>Random roles for you and your teammates</p>
           </section>
         </Link>
       </main>
