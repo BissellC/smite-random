@@ -31,6 +31,7 @@
   },
   "dependencies": {
     "json": "^9.0.6",
+    "netlify": "^4.0.1",
     "node-sass": "^4.13.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
