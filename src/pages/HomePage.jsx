@@ -4,7 +4,7 @@ import fill from '../images/fill.jpg'
 
 const HomePage = () => {
   return (
-    <>
+    <div className="homepage-body">
       <header>
         <h1>Smite Pick</h1>
       </header>
@@ -17,7 +17,7 @@ const HomePage = () => {
           </section>
         </Link>
       </main>
-    </>
+    </div>
   )
 }
 

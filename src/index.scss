@@ -21,13 +21,20 @@ html {
 body {
   margin: 0;
   min-height: 100%;
-  background-color: $color-complement-0;
+  background: rgb(54, 72, 168);
+  background: linear-gradient(
+    150deg,
+    rgba(54, 72, 168, 1) 38%,
+    rgba(181, 181, 172, 1) 100%
+  );
+
+  font-family: 'Aclonica', sans-serif;
 }
 
 header {
   background-color: $color-primary-0;
   padding: 1rem;
-  margin-bottom: 2rem;
+  box-shadow: 1px 2px 22px 2px rgba(0, 0, 0, 0.75);
 
   h1 {
     margin: 0;
@@ -47,13 +54,12 @@ header {
     display: flex;
     flex-direction: column;
     margin: 1rem;
-    width: 20rem;
+    box-shadow: 7px 11px 22px 2px rgba(0, 0, 0, 0.75);
     align-items: center;
-    color: $color-complement-2;
-    background-color: $color-primary-2;
+    color: $color-complement-0;
+    background-color: $color-primary-0;
     padding: 1rem;
     border-radius: 3px;
-    border: 2px solid $color-complement-0;
   }
 
   section:hover {
@@ -94,18 +100,20 @@ header {
   }
 }
 
-.conquest-picker-container {
+.roles-main > section {
   display: flex;
   justify-content: center;
 
   section {
     margin: 1rem;
-    background-color: $color-primary-2;
+    background-color: $color-primary-0;
     padding: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border: 1px solid $color-complement-0;
+    box-shadow: 7px 11px 22px 2px rgba(0, 0, 0, 0.75);
 
     img {
       height: 75px;
@@ -133,20 +141,40 @@ header {
   h1 {
     text-align: center;
     color: $color-primary-2;
-    text-decoration: underline;
+    background-color: $color-complement-3;
+    border: 3px solid $color-primary-3;
+    padding: 0.5rem;
+    box-shadow: 7px 11px 22px 2px rgba(0, 0, 0, 0.75);
+    font-size: 30px;
   }
 
   button {
-    width: 8rem;
-    padding: 0.5rem;
+    background: linear-gradient(to bottom, #ffec64 5%, #f6c036 100%);
+    background-color: #ffec64;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #3647a8;
     font-size: 12px;
-    border-radius: 5px;
-    background-color: $color-primary-2;
-    color: $color-complement-2;
-    border: 1px solid $color-primary-4;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #ffee66;
   }
-
   button:hover {
-    background-color: $color-primary-1;
+    background: linear-gradient(to bottom, #f6c036 5%, #ffec64 100%);
+    background-color: #f6c036;
+  }
+  button:active {
+    position: relative;
+    top: 1px;
+  }
+}
+
+.joust-picker-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  div {
+    display: flex;
   }
 }
